@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veille Technologique - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/veille.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./entreprise.html">Entreprise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./realisations.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Veille technologique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bilan.html">Bilan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="veille-header">
+                <h1>Veille Technologique</h1>
+                <p class="lead">Exploration et analyse des avancées dans le Cloud Computing</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="theme-section">
+            <h2 class="section-title">Thème : Cloud Computing</h2>
+            <p>Ma veille technologique est centrée sur le Cloud Computing, un domaine en constante évolution qui révolutionne la façon dont nous concevons, déployons et gérons les applications. Ce choix est motivé par l'omniprésence du cloud dans le développement moderne et son importance croissante dans l'écosystème IT.</p>
+            
+            <h3 class="mt-4">Sources d'information</h3>
+            <ul>
+                <li>Plateformes cloud majeures : AWS, Azure, Google Cloud</li>
+                <li>Sites spécialisés : Le Monde Informatique, L'Usine Digitale</li>
+                <li>Chaînes YouTube techniques</li>
+                <li>Blogs et documentation officielles des fournisseurs cloud</li>
+            </ul>
+            
+            <h3 class="mt-4">Mode de diffusion</h3>
+            <ul class="source-list">
+                <li class="source-item">
+                    <div class="source-icon">
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <div>
+                        <h4>YouTube</h4>
+                        <p>Abonnement avec notifications activées sur mobile pour un suivi en temps réel</p>
+                    </div>
+                </li>
+                <li class="source-item">
+                    <div class="source-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Le Monde Informatique</h4>
+                        <p>Newsletter hebdomadaire</p>
+                    </div>
+                </li>
+                <li class="source-item">
+                    <div class="source-icon">
+                        <i class="bi bi-rss"></i>
+                    </div>
+                    <div>
+                        <h4>L'Usine Digitale</h4>
+                        <p>Flux RSS</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="article-filters">
+                <span>Trier par :</span>
+                <select class="form-select" style="width: auto;">
+                    <option value="date-desc">Date (plus récent)</option>
+                    <option value="date-asc">Date (plus ancien)</option>
+                    <option value="rating-desc">Note (meilleure)</option>
+                    <option value="rating-asc">Note (moins bonne)</option>
+                </select>
+            </div>
+
+            <div class="article-list">
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3>La France veut rétablir la concurrence dans le cloud</h3>
+                        <span class="article-rating">Note: 3/5</span>
+                    </div>
+                    <div class="article-meta">
+                        <span class="source-badge">Alice Vitard (L'Usine Digitale)</span>
+                        <span>14 octobre 2024</span>
+                    </div>
+                    <p class="mt-3">L'Arcep reçoit de nouvelles missions via la loi SREN pour réguler le marché du cloud dominé par 3 acteurs américains (AWS, Google Cloud, Microsoft Azure). L'objectif est de rétablir la concurrence en encadrant les frais de transfert et en définissant des règles d'interopérabilité. Une consultation publique est ouverte jusqu'au 16 décembre 2024.</p>
+                    <a href="https://www.usine-digitale.fr/editorial/frais-de-migration-interoperabilite-des-services-l-arcep-veut-retablir-la-concurrence-dans-le-cloud.N2220441" class="btn btn-outline-primary mt-2">Lire l'article</a>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3>Arrêter d'utiliser Google Drive et iCloud</h3>
+                        <span class="article-rating">Note: 5/5</span>
+                    </div>
+                    <div class="article-meta">
+                        <span class="source-badge">YouTube</span>
+                        <span>16 mai 2024</span>
+                    </div>
+                    <p class="mt-3">Présentation des alternatives aux services de stockage cloud des GAFAM, avec une analyse des différentes solutions disponibles comme le stockage froid et les NAS.</p>
+                    <a href="https://youtu.be/8cNPpLswdLY?si=h0R-sYyFKA9hnrzB" class="btn btn-outline-primary mt-2">Regarder la vidéo</a>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3>Les DSI sous pression des coûts du cloud</h3>
+                        <span class="article-rating">Note: 4/5</span>
+                    </div>
+                    <div class="article-meta">
+                        <span class="source-badge">Grant Gross, CIO US (adapté par Reynald Fléchaux de Le Monde Informatique)</span>
+                        <span>04 Septembre 2024</span>
+                    </div>
+                    <p class="mt-3">Une étude révèle que 60% des organisations ont vu leurs dépenses cloud augmenter cette année, avec 40% rapportant une hausse de plus de 25%. Les facteurs incluent l'inflation, l'adoption de l'IA, et la complexité croissante des infrastructures multicloud. Les experts recommandent la nomination d'un contrôleur de cloud dédié et l'utilisation d'outils de gestion des coûts.</p>
+                    <a href="#" class="btn btn-outline-primary mt-2">Lire l'article</a>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/veille.js"></script>
+</body>
+</html>
