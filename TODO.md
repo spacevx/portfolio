@@ -19,3 +19,17 @@ DSRD - MOOC Protection du Secret
 
 FUN -> MOOC (minimum 1)
 1 plateforme*
+
+Gest EPI (cdc, modèle de base de données)
+jo_project starter (cdc, modèle de base de données, capture d'écran du code)
+Gestion avion (cahier des charges, modèle de base de données, documentation de l'api, screens)
+rail-trip (cdc, charte graphique, screens du code)
+
+Adminstration Système (sur un serveur dédié sous debian, cdc, screens)
+
+Framework avec système de persistance (cahier des charges, screens)
+Logiciel anti triche (cdc, screens du code)
+
+- Référencement du site
+- Montrer comment on test les projets
+- Site compatible au gens qui sont malvoyants ou autre
