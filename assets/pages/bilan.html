@@ -3,122 +3,183 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bilan - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Bilan | Ahcene Zidahnal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link href="../css/bilan.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <script src="../js/navbar.js"></script>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand">AZ</a>
+            <ul class="navbar-menu">
+                <li><a href="../../index.html" class="navbar-link">Accueil</a></li>
+                <li><a href="./entreprise.html" class="navbar-link">Entreprise</a></li>
+                <li><a href="./realisations.html" class="navbar-link">Réalisations</a></li>
+                <li><a href="./veille.html" class="navbar-link">Veille</a></li>
+                <li><a href="#" class="navbar-link active">Bilan</a></li>
+            </ul>
+            <button class="navbar-toggle">
+                <i class="bi bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./entreprise.html">Entreprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./realisations.html">Réalisations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./veille.html">Veille technologique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Bilan</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="container">
-            <div class="text-center">
-                <h1>Bilan de mon BTS SIO SLAM</h1>
-                <p class="lead">Rétrospective sur deux années de formation enrichissantes</p>
-            </div>
+        <div class="container hero-content">
+            <h1 class="hero-title animate">Bilan de mon BTS SIO SLAM</h1>
+            <p class="hero-subtitle animate delay-1">
+                Rétrospective sur deux années de formation enrichissantes
+            </p>
         </div>
     </section>
 
-    <div class="container">
-        <section class="section-card">
-            <h2>Ce que j'ai appris</h2>
-            <div class="highlight-box">
-                <h4>Compétences techniques</h4>
-                <div class="my-3">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                    <span class="skill-tag">Framework MVC</span>
-                    <span class="skill-tag">API REST</span>
+    <section class="section">
+        <div class="container">
+            <div class="section-card animate">
+                <h2 class="section-title">Ce que j'ai appris</h2>
+                
+                <div class="highlight-box">
+                    <h4 class="highlight-title">
+                        <i class="bi bi-code-slash"></i>
+                        Compétences techniques
+                    </h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Framework MVC</span>
+                        <span class="skill-tag">API REST</span>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <h4 class="highlight-title">
+                        <i class="bi bi-people"></i>
+                        Compétences transversales
+                    </h4>
+                    <ul>
+                        <li>Gestion de projet</li>
+                        <li>Travail en équipe et collaboration</li>
+                        <li>Communication technique et documentation</li>
+                        <li>Analyse et résolution de problèmes</li>
+                        <li>Veille technologique</li>
+                    </ul>
                 </div>
             </div>
-            <div class="highlight-box">
-                <h4>Compétences</h4>
-                <ul>
-                    <li>Gestion de projet</li>
-                    <li>Travail en équipe et collaboration</li>
-                    <li>Communication technique et documentation</li>
-                    <li>Analyse et résolution de problèmes</li>
-                    <li>Veille technologique</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section-card">
-            <h2>Ce que j'ai apprécié</h2>
-            <div class="row">
-                <div class="col-md-6">
+            
+            <div class="section-card animate delay-1">
+                <h2 class="section-title">Ce que j'ai apprécié</h2>
+                
+                <div class="row">
                     <div class="highlight-box">
-                        <h4>Points positifs</h4>
+                        <h4 class="highlight-title">
+                            <i class="bi bi-emoji-smile"></i>
+                            Points positifs
+                        </h4>
                         <ul>
                             <li>La diversité des projets pratiques</li>
                             <li>L'alternance théorie/pratique</li>
                             <li>L'apprentissage par la pratique</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-6">
+                    
                     <div class="highlight-box">
-                        <h4>Points à améliorer</h4>
+                        <h4 class="highlight-title">
+                            <i class="bi bi-exclamation-circle"></i>
+                            Points à améliorer
+                        </h4>
                         <ul>
                             <li>Temps limité pour les projets personnels</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-card">
-            <h2>Ce que je ferais différemment</h2>
-            <div class="highlight-box">
-                <h4>Mes recommandations</h4>
-                <ul>
-                    <li>Commencer la veille technologique plus tôt pour mieux suivre les évolutions</li>
-                    <li>Participer à plus de projets open source pour gagner en expérience</li>
-                    <li>Développer davantage de projets personnels en parallèle des cours</li>
-                    <li>Créer un réseau professionnel plus tôt dans la formation</li>
-                    <li>Approfondir certaines technologies spécifiques en autonomie</li>
-                </ul>
+            
+            <div class="section-card animate delay-2">
+                <h2 class="section-title">Ce que je ferais différemment</h2>
+                
+                <div class="highlight-box">
+                    <h4 class="highlight-title">
+                        <i class="bi bi-lightbulb"></i>
+                        Mes recommandations
+                    </h4>
+                    <ul>
+                        <li>Commencer la veille technologique plus tôt pour mieux suivre les évolutions</li>
+                        <li>Participer à plus de projets open source pour gagner en expérience</li>
+                        <li>Développer davantage de projets personnels en parallèle des cours</li>
+                        <li>Créer un réseau professionnel plus tôt dans la formation</li>
+                        <li>Approfondir certaines technologies spécifiques en autonomie</li>
+                    </ul>
+                </div>
+                
+                <div class="conclusion">
+                    <h4 class="conclusion-title">En conclusion</h4>
+                    <p class="conclusion-text">
+                        Ces deux années de BTS SIO SLAM ont été fondamentales dans ma formation professionnelle. Malgré quelques points d'amélioration possibles, j'ai acquis une base solide de compétences techniques. Cette formation m'a permis de confirmer mon choix de carrière dans le développement informatique et m'a donné les outils nécessaires pour continuer à évoluer dans ce domaine.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Informations Légales</h3>
+                    <ul class="footer-links">
+                        <li><a href="../pages/mentions.html">Mentions légales</a></li>
+                        <li><a href="../pages/confidential.html">Politique de confidentialité</a></li>
+                        <li><a href="../pages/conditions.html">Conditions générales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Navigation Rapide</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Accueil</a></li>
+                        <li><a href="./entreprise.html">Entreprise</a></li>
+                        <li><a href="./realisations.html">Réalisations</a></li>
+                        <li><a href="./veille.html">Veille technologique</a></li>
+                        <li><a href="#" class="active">Bilan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt"></i> Paris, France</p>
+                        <p>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:ahcene.zidahnal@gmail.com">ahcene.zidahnal@gmail.com</a>
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/spacevx" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://gitlab.com/TheSpaceGamerV2" target="_blank" rel="noopener">
+                                <i class="bi bi-gitlab"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="mt-4">
-                <h4>En conclusion</h4>
-                <p>Ces deux années de BTS SIO SLAM ont été fondamentales dans ma formation professionnelle. Malgré quelques points d'amélioration possibles, j'ai acquis une base solide de compétences techniques. Cette formation m'a permis de confirmer mon choix de carrière dans le développement informatique et m'a donné les outils nécessaires pour continuer à évoluer dans ce domaine.</p>
+            <div class="footer-bottom">
+                <p>© 2025 Ahcene Zidahnal. Tous droits réservés. Développé par Ahcene Zidahnal</p>
             </div>
-        </section>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navbar.js"></script>
+        </div>
+    </footer>
 </body>
 </html>

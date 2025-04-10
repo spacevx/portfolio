@@ -3,320 +3,365 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Réalisations - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Réalisations | Ahcene Zidahnal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link href="../css/realisations.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <script src="../js/navbar.js"></script>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand">AZ</a>
+            <ul class="navbar-menu">
+                <li><a href="../../index.html" class="navbar-link">Accueil</a></li>
+                <li><a href="./entreprise.html" class="navbar-link">Entreprise</a></li>
+                <li><a href="#" class="navbar-link active">Réalisations</a></li>
+                <li><a href="./veille.html" class="navbar-link">Veille</a></li>
+                <li><a href="./bilan.html" class="navbar-link">Bilan</a></li>
+            </ul>
+            <button class="navbar-toggle">
+                <i class="bi bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./entreprise.html">Entreprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Réalisations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./veille.html">Veille technologique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./bilan.html">Bilan</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1 class="display-4 fw-bold mb-4">Mes Réalisations</h1>
-                    <p class="lead mb-5">Découvrez les projets techniques sur lesquels j'ai travaillé, démontrant mes compétences en développement système, optimisation de performances et programmation bas niveau.</p>
-                </div>
-            </div>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title animate">Mes Réalisations</h1>
+            <p class="hero-subtitle animate delay-1">
+                Découvrez les projets techniques sur lesquels j'ai travaillé, démontrant mes compétences en développement système, 
+                optimisation de performances et programmation bas niveau.
+            </p>
         </div>
-    </header>
+    </section>
 
-    <section class="main-content py-5">
+    <section class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Framework de Gestion Multi-Joueurs</h5>
-                            <p class="card-text">Architecture et développement d'un framework haute performance pour la gestion de milliers de joueurs simultanés.</p>
-                            
-                            <div class="project-details">
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-person-workspace"></i> Mon rôle</h6>
-                                    <ul>
-                                        <li>Architecte principal du framework</li>
-                                        <li>Développement des systèmes de performances</li>
-                                        <li>Optimisation des connexions multijoueurs</li>
-                                        <li>Implémentation de la persistance des données</li>
-                                    </ul>
-                                </div>
+            <div class="section-header animate">
+                <h2 class="section-title">Mes Projets</h2>
+                <p class="section-subtitle">Une sélection de mes travaux les plus significatifs</p>
+            </div>
 
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-tools"></i> Compétences mobilisées</h6>
-                                    <ul>
-                                        <li>Architecture de systèmes distribués</li>
-                                        <li>Optimisation de performances</li>
-                                        <li>Programmation concurrentielle</li>
-                                        <li>Gestion base de données à grande échelle</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-star"></i> Ce que j'en retire</h6>
-                                    <ul>
-                                        <li>Maîtrise des problématiques de scalabilité</li>
-                                        <li>Expérience en architecture complexe</li>
-                                        <li>Gestion efficace des ressources</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tech-stack mt-3">
-                                <img src="https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white" alt="Lua">
-                                <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-                                <img src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                                <img src="https://img.shields.io/badge/-Github-003545?style=flat-square&logo=github&logoColor=white" alt="Github">
+            <div class="projects-grid">
+                <div class="project-card animate delay-1">
+                    <div class="project-body">
+                        <h3 class="project-title">Framework de Gestion Multi-Joueurs</h3>
+                        <p class="project-desc">Architecture et développement d'un framework haute performance pour la gestion de milliers de joueurs simultanés.</p>
+                        
+                        <div class="project-sections">
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-person-workspace"></i>
+                                    Mon rôle
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Architecte principal du framework</li>
+                                    <li>Développement des systèmes de performances</li>
+                                    <li>Optimisation des connexions multijoueurs</li>
+                                    <li>Implémentation de la persistance des données</li>
+                                </ul>
                             </div>
                             
-                            <a href="../pdf/framework.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Résumé
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-tools"></i>
+                                    Compétences mobilisées
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Architecture de systèmes distribués</li>
+                                    <li>Optimisation de performances</li>
+                                    <li>Programmation concurrentielle</li>
+                                    <li>Gestion base de données à grande échelle</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-star"></i>
+                                    Ce que j'en retire
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Maîtrise des problématiques de scalabilité</li>
+                                    <li>Expérience en architecture complexe</li>
+                                    <li>Gestion efficace des ressources</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">Lua</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">MariaDB</span>
+                            <span class="tech-badge">Github</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="../pdf/framework.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Résumé du projet
                             </a>
-                            <a href="#" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Cahier des charges [Non disponible]
-                            </a>
+                            <span class="btn btn-disabled">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Cahier des charges [Non disponible]
+                            </span>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Logiciel Anti-Triche</h5>
-                            <p class="card-text">Développement d'une solution anti-triche avancée pour le jeu vidéo Grand Theft Auto V.</p>
-                            
-                            <div class="project-details">
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-person-workspace"></i> Mon rôle</h6>
-                                    <ul>
-                                        <li>Développement du système de détection en temps réel</li>
-                                        <li>Implémentation des vérifications de mémoire</li>
-                                        <li>Création du système de bannissement automatique</li>
-                                        <li>Optimisation des performances serveur</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-tools"></i> Compétences mobilisées</h6>
-                                    <ul>
-                                        <li>Programmation système en C#</li>
-                                        <li>Analyse de mémoire et reverse engineering</li>
-                                        <li>Gestion de base de données</li>
-                                        <li>R&D</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-star"></i> Ce que j'en retire</h6>
-                                    <ul>
-                                        <li>Le C# est un très bon langage de programmation</li>
-                                        <li>Pratique des techniques anti-reverse engineering</li>
-                                        <li>Optimisation de performances C#</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tech-stack mt-3">
-                                <img src="https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#">
-                                <img src="https://img.shields.io/badge/-Mono-42B883?style=flat-square&logo=mono&logoColor=white" alt="Mono">
-                                <img src="https://img.shields.io/badge/-Github-003545?style=flat-square&logo=github&logoColor=white" alt="Github">
-                                <img src="https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB">
-                            </div>
-                            
-                            <a href="#" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Résumé
-                            </a>
-                            <a href="#" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Cahier des charges [Non disponible]
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
                 
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Minishell Unix</h5>
-                            <p class="card-text">Implémentation d'un shell Unix sous Fedora avec gestion des pipes et commandes basiques.</p>
-                            
-                            <div class="project-details">
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-person-workspace"></i> Mon rôle</h6>
-                                    <ul>
-                                        <li>Développement complet du shell</li>
-                                        <li>Implémentation du système de pipes</li>
-                                        <li>Gestion des commandes ls et cd</li>
-                                        <li>Tests et validation</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-tools"></i> Compétences mobilisées</h6>
-                                    <ul>
-                                        <li>Programmation système en C</li>
-                                        <li>Gestion des processus Unix</li>
-                                        <li>Manipulation de fichiers</li>
-                                        <li>Parsing de commandes</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-star"></i> Ce que j'en retire</h6>
-                                    <ul>
-                                        <li>Compréhension profonde des shells Unix</li>
-                                        <li>Maîtrise de la programmation système</li>
-                                        <li>Gestion efficace des processus</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tech-stack mt-3">
-                                <img src="https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C">
-                                <img src="https://img.shields.io/badge/-Github-003545?style=flat-square&logo=github&logoColor=white" alt="Github">
-                                <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+                <div class="project-card animate delay-2">
+                    <div class="project-body">
+                        <h3 class="project-title">Logiciel Anti-Triche</h3>
+                        <p class="project-desc">Développement d'une solution anti-triche avancée pour le jeu vidéo Grand Theft Auto V.</p>
+                        
+                        <div class="project-sections">
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-person-workspace"></i>
+                                    Mon rôle
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Développement du système de détection en temps réel</li>
+                                    <li>Implémentation des vérifications de mémoire</li>
+                                    <li>Création du système de bannissement automatique</li>
+                                    <li>Optimisation des performances serveur</li>
+                                </ul>
                             </div>
                             
-                            <a href="../pdf/minishell.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Résumé
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-tools"></i>
+                                    Compétences mobilisées
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Programmation système en C#</li>
+                                    <li>Analyse de mémoire et reverse engineering</li>
+                                    <li>Gestion de base de données</li>
+                                    <li>R&D</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-star"></i>
+                                    Ce que j'en retire
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Le C# est un très bon langage de programmation</li>
+                                    <li>Pratique des techniques anti-reverse engineering</li>
+                                    <li>Optimisation de performances C#</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">Mono</span>
+                            <span class="tech-badge">Github</span>
+                            <span class="tech-badge">MariaDB</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <span class="btn btn-disabled">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Résumé du projet [Non disponible]
+                            </span>
+                            <span class="btn btn-disabled">
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Cahier des charges [Non disponible]
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate delay-3">
+                    <div class="project-body">
+                        <h3 class="project-title">Minishell Unix</h3>
+                        <p class="project-desc">Implémentation d'un shell Unix sous Fedora avec gestion des pipes et commandes basiques.</p>
+                        
+                        <div class="project-sections">
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-person-workspace"></i>
+                                    Mon rôle
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Développement complet du shell</li>
+                                    <li>Implémentation du système de pipes</li>
+                                    <li>Gestion des commandes ls et cd</li>
+                                    <li>Tests et validation</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-tools"></i>
+                                    Compétences mobilisées
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Programmation système en C</li>
+                                    <li>Gestion des processus Unix</li>
+                                    <li>Manipulation de fichiers</li>
+                                    <li>Parsing de commandes</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-star"></i>
+                                    Ce que j'en retire
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Compréhension profonde des shells Unix</li>
+                                    <li>Maîtrise de la programmation système</li>
+                                    <li>Gestion efficace des processus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Github</span>
+                            <span class="tech-badge">Linux</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="../pdf/minishell.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Résumé du projet
                             </a>
-                            <a href="../pdf/minishell_Cahier des charges.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Cahier des charges
+                            <a href="../pdf/minishell_Cahier des charges.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Cahier des charges
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Antman - Compression de Données</h5>
-                            <p class="card-text">Implémentation de l'algorithme LZW pour la compression efficace de données.</p>
-                            
-                            <div class="project-details">
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-person-workspace"></i> Mon rôle</h6>
-                                    <ul>
-                                        <li>Implémentation de l'algorithme LZW</li>
-                                        <li>Optimisation de la compression</li>
-                                        <li>Gestion des différents types de fichiers</li>
-                                        <li>Tests de performance</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-tools"></i> Compétences mobilisées</h6>
-                                    <ul>
-                                        <li>Algorithmes de compression</li>
-                                        <li>Manipulation de bits en C</li>
-                                        <li>Optimisation mémoire</li>
-                                        <li>Traitement de fichiers</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-star"></i> Ce que j'en retire</h6>
-                                    <ul>
-                                        <li>Maîtrise des algorithmes de compression</li>
-                                        <li>Optimisation de code</li>
-                                        <li>Gestion efficace de la mémoire</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tech-stack mt-3">
-                                <img src="https://img.shields.io/badge/-Github-003545?style=flat-square&logo=github&logoColor=white" alt="Github">
-                                <img src="https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C">
+                
+                <div class="project-card animate delay-4">
+                    <div class="project-body">
+                        <h3 class="project-title">Antman - Compression de Données</h3>
+                        <p class="project-desc">Implémentation de l'algorithme LZW pour la compression efficace de données.</p>
+                        
+                        <div class="project-sections">
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-person-workspace"></i>
+                                    Mon rôle
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Implémentation de l'algorithme LZW</li>
+                                    <li>Optimisation de la compression</li>
+                                    <li>Gestion des différents types de fichiers</li>
+                                    <li>Tests de performance</li>
+                                </ul>
                             </div>
                             
-                            <a href="../pdf/antman.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Résumé
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-tools"></i>
+                                    Compétences mobilisées
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Algorithmes de compression</li>
+                                    <li>Manipulation de bits en C</li>
+                                    <li>Optimisation mémoire</li>
+                                    <li>Traitement de fichiers</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-star"></i>
+                                    Ce que j'en retire
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Maîtrise des algorithmes de compression</li>
+                                    <li>Optimisation de code</li>
+                                    <li>Gestion efficace de la mémoire</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Github</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="../pdf/antman.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Résumé du projet
                             </a>
-
-                            <a href="../pdf/antman_Cahier des charges.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Cahier des charges
+                            <a href="../pdf/antman_Cahier des charges.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Cahier des charges
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Gestionnaire de Mémoire</h5>
-                            <p class="card-text">Recréation des fonctions de gestion mémoire standard (malloc, calloc, free).</p>
-                            
-                            <div class="project-details">
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-person-workspace"></i> Mon rôle</h6>
-                                    <ul>
-                                        <li>Implémentation de malloc/calloc/free</li>
-                                        <li>Gestion des allocations mémoire</li>
-                                        <li>Optimisation des performances</li>
-                                        <li>Tests de fiabilité</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-tools"></i> Compétences mobilisées</h6>
-                                    <ul>
-                                        <li>Gestion bas niveau de la mémoire</li>
-                                        <li>Manipulation de pointeurs</li>
-                                        <li>Optimisation d'algorithmes</li>
-                                        <li>Débogage système</li>
-                                    </ul>
-                                </div>
-
-                                <div class="detail-section">
-                                    <h6><i class="bi bi-star"></i> Ce que j'en retire</h6>
-                                    <ul>
-                                        <li>Compréhension approfondie de la mémoire</li>
-                                        <li>Maîtrise des pointeurs en C</li>
-                                        <li>Techniques d'optimisation mémoire</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="tech-stack mt-3">
-                                <img src="https://img.shields.io/badge/-Github-003545?style=flat-square&logo=github&logoColor=white" alt="Github">
-                                <img src="https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C">
+                
+                <div class="project-card animate delay-5">
+                    <div class="project-body">
+                        <h3 class="project-title">Gestionnaire de Mémoire</h3>
+                        <p class="project-desc">Recréation des fonctions de gestion mémoire standard (malloc, calloc, free).</p>
+                        
+                        <div class="project-sections">
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-person-workspace"></i>
+                                    Mon rôle
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Implémentation de malloc/calloc/free</li>
+                                    <li>Gestion des allocations mémoire</li>
+                                    <li>Optimisation des performances</li>
+                                    <li>Tests de fiabilité</li>
+                                </ul>
                             </div>
                             
-                            <a href="../pdf/memory.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Résumé
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-tools"></i>
+                                    Compétences mobilisées
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Gestion bas niveau de la mémoire</li>
+                                    <li>Manipulation de pointeurs</li>
+                                    <li>Optimisation d'algorithmes</li>
+                                    <li>Débogage système</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="project-section">
+                                <h4 class="project-section-title">
+                                    <i class="bi bi-star"></i>
+                                    Ce que j'en retire
+                                </h4>
+                                <ul class="project-list">
+                                    <li>Compréhension approfondie de la mémoire</li>
+                                    <li>Maîtrise des pointeurs en C</li>
+                                    <li>Techniques d'optimisation mémoire</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Github</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="../pdf/memory.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Résumé du projet
                             </a>
-
-                            <a href="../pdf/malloc_Cahier des charges.pdf" class="btn btn-primary mt-3" download>
-                                <i class="bi bi-file-earmark-pdf"></i>Cahier des charges
+                            <a href="../pdf/malloc_Cahier des charges.pdf" class="btn btn-primary" download>
+                                <i class="bi bi-file-earmark-pdf"></i>
+                                Cahier des charges
                             </a>
                         </div>
                     </div>
@@ -324,8 +369,57 @@
             </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/navbar.js"></script>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Informations Légales</h3>
+                    <ul class="footer-links">
+                        <li><a href="../pages/mentions.html">Mentions légales</a></li>
+                        <li><a href="../pages/confidential.html">Politique de confidentialité</a></li>
+                        <li><a href="../pages/conditions.html">Conditions générales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Navigation Rapide</h3>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Accueil</a></li>
+                        <li><a href="./entreprise.html">Entreprise</a></li>
+                        <li><a href="#" class="active">Réalisations</a></li>
+                        <li><a href="./veille.html">Veille technologique</a></li>
+                        <li><a href="./bilan.html">Bilan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt"></i> Paris, France</p>
+                        <p>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:ahcene.zidahnal@gmail.com">ahcene.zidahnal@gmail.com</a>
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/spacevx" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://gitlab.com/TheSpaceGamerV2" target="_blank" rel="noopener">
+                                <i class="bi bi-gitlab"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ahcene Zidahnal. Tous droits réservés. Développé par Ahcene Zidahnal</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

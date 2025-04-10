@@ -3,166 +3,155 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Ahcene Zidahnal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ahcene Zidahnal | Développeur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+    <script src="assets/js/navbar.js"></script>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand">AZ</a>
+            <ul class="navbar-menu">
+                <li><a href="#" class="navbar-link active">Accueil</a></li>
+                <li><a href="assets/pages/entreprise.html" class="navbar-link">Entreprise</a></li>
+                <li><a href="assets/pages/realisations.html" class="navbar-link">Réalisations</a></li>
+                <li><a href="assets/pages/veille.html" class="navbar-link">Veille</a></li>
+                <li><a href="assets/pages/bilan.html" class="navbar-link">Bilan</a></li>
+            </ul>
+            <button class="navbar-toggle">
+                <i class="bi bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/pages/entreprise.html">Entreprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/pages/realisations.html">Réalisations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/pages/veille.html">Veille technologique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/pages/bilan.html">Bilan</a>
-                    </li>
-                    
-                </ul>
-            </div>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="hero-content">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="profile-card">
-                            <div class="profile-info">
-                                <h1>Ahcene Zidahnal</h1>
-                                <div class="subtitle">Étudiant en BTS SIO - SLAM 2ème année</div>
-                                <p class="description">
-                                    Passionné par le développement et la cybersécurité, je me spécialise dans la création de solutions 
-                                    logicielles innovantes. Mon expertise s'étend du développement bas niveau à la conception d'applications modernes.
-                                </p>
-                                <div class="cta-container">
-                                    <a href="assets/pdf/cv.pdf" class="cv-button" download>
-                                        <span>Télécharger mon CV</span>
-                                        <i class="bi bi-download"></i>
-                                    </a>
-                                </div>
-                                <div class="social-links">
-                                    <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" class="social-link" target="_blank" rel="noopener">
-                                        <i class="bi bi-linkedin"></i>
-                                    </a>
-                                    <a href="https://github.com/spacevx" class="social-link" target="_blank" rel="noopener">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://gitlab.com/TheSpaceGamerV2" class="social-link" target="_blank" rel="noopener">
-                                        <i class="bi bi-gitlab"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills">
         <div class="container">
-            <div class="section-header">
-                <h2>Compétences</h2>
-                <p>Technologies et outils maîtrisés</p>
+            <div class="hero-grid">
+                <div class="hero-content animate">
+                    <span class="hero-subtitle">Développeur passionné</span>
+                    <h1 class="hero-title">Ahcene Zidahnal <span>Développeur & Cybersécurité</span></h1>
+                    <p class="hero-description">
+                        Étudiant en BTS SIO spécialité SLAM, je me spécialise dans la création de solutions logicielles innovantes
+                        et l'exploration de la cybersécurité.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="assets/pdf/cv.pdf" class="btn btn-primary" download>
+                            <span>Télécharger mon CV</span>
+                            <i class="bi bi-download"></i>
+                        </a>
+                        <a href="assets/pages/realisations.html" class="btn btn-outline">
+                            <span>Voir mes projets</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" class="social-link" target="_blank" rel="noopener">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/spacevx" class="social-link" target="_blank" rel="noopener">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://gitlab.com/TheSpaceGamerV2" class="social-link" target="_blank" rel="noopener">
+                            <i class="bi bi-gitlab"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate delay-1">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <i class="bi bi-person"></i>
+                            <!-- Si vous avez une photo: -->
+                            <!-- <img src="assets/img/profile.jpg" alt="Ahcene Zidahnal"> -->
+                        </div>
+                        <h2 class="profile-name">Ahcene Zidahnal</h2>
+                        <span class="profile-title">BTS SIO - SLAM</span>
+                        <p class="profile-text">
+                            Passionné par le développement et la cybersécurité, je me spécialise dans la création de solutions 
+                            logicielles innovantes. Mon expertise s'étend du développement bas niveau à la conception d'applications modernes.
+                        </p>
+                        <a href="mailto:ahcene.zidahnal@gmail.com" class="btn btn-outline">
+                            <i class="bi bi-envelope"></i>
+                            <span>Me contacter</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="skills-wrapper">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>Langages de Programmation</h3>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header animate">
+                <h2 class="section-title">Compétences</h2>
+                <p class="section-subtitle">Technologies et outils maîtrisés</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category animate delay-1">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h3 class="skill-title">Langages de Programmation</h3>
                     </div>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon">C</div>
-                            <div class="skill-info">
-                                <h4>C</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">C</div>
+                            <div class="skill-item-name">C</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">TS</div>
-                            <div class="skill-info">
-                                <h4>TypeScript</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">TS</div>
+                            <div class="skill-item-name">TypeScript</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">JS</div>
-                            <div class="skill-info">
-                                <h4>JavaScript</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">JS</div>
+                            <div class="skill-item-name">JavaScript</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">Lua</div>
-                            <div class="skill-info">
-                                <h4>Lua</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">Lua</div>
+                            <div class="skill-item-name">Lua</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">Go</div>
-                            <div class="skill-info">
-                                <h4>Go</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">Go</div>
+                            <div class="skill-item-name">Go</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">Ja</div>
-                            <div class="skill-info">
-                                <h4>Java</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon">Ja</div>
+                            <div class="skill-item-name">Java</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="bi bi-tools"></i>
-                        <h3>Outils & Technologies</h3>
+                <div class="skill-category animate delay-2">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3 class="skill-title">Outils & Technologies</h3>
                     </div>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-icon"><i class="bi bi-terminal"></i></div>
-                            <div class="skill-info">
-                                <h4>Linux</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="bi bi-terminal"></i></div>
+                            <div class="skill-item-name">Linux</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon"><i class="bi bi-box-seam"></i></div>
-                            <div class="skill-info">
-                                <h4>Docker</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="bi bi-box-seam"></i></div>
+                            <div class="skill-item-name">Docker</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon"><i class="bi bi-graph-up"></i></div>
-                            <div class="skill-info">
-                                <h4>Grafana</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="bi bi-graph-up"></i></div>
+                            <div class="skill-item-name">Grafana</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon"><i class="bi bi-gear"></i></div>
-                            <div class="skill-info">
-                                <h4>Node.js</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="bi bi-gear"></i></div>
+                            <div class="skill-item-name">Node.js</div>
                         </div>
-                        <div class="skill-card">
-                            <div class="skill-icon"><i class="bi bi-bug"></i></div>
-                            <div class="skill-info">
-                                <h4>IDA</h4>
-                            </div>
+                        <div class="skill-item">
+                            <div class="skill-item-icon"><i class="bi bi-bug"></i></div>
+                            <div class="skill-item-name">IDA</div>
                         </div>
                     </div>
                 </div>
@@ -170,98 +159,78 @@
         </div>
     </section>
 
-    <!-- Section Certifications avec grille extensible -->
-<section class="certifications">
-    <div class="container">
-        <div class="section-header">
-            <h2>Certifications</h2>
-            <p>Mes accréditations professionnelles</p>
-        </div>
-        <div class="certifications-grid">
-            <!-- AWS -->
-            <div class="cert-card">
-                <div class="cert-inner">
-                    <div class="cert-icon">
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <div class="section-header animate">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Mes accréditations professionnelles</p>
+            </div>
+            <div class="cert-container">
+                <div class="cert-card animate delay-1">
+                    <div class="cert-badge">
                         <i class="bi bi-shield-check"></i>
                     </div>
-                    <div class="cert-content">
-                        <h3>SecNumAcadémie ANSSI</h3>
-                        <p class="cert-date">Décembre 2024</p>
-                        <div class="cert-id">MOOC-ANSSI-2024</div>
-                    </div>
-                    <div class="cert-channel-dot"></div>
+                    <h3 class="cert-name">SecNumAcadémie ANSSI</h3>
+                    <div class="cert-issuer">Agence Nationale de la Sécurité des Systèmes d'Information</div>
+                    <div class="cert-date">Décembre 2024</div>
+                    <div class="cert-id">MOOC-ANSSI-2024</div>
                 </div>
+                
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-    <section class="timeline">
+    <section id="experience" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2>Mon Parcours</h2>
-                <p>Expériences professionnelles</p>
+            <div class="section-header animate">
+                <h2 class="section-title">Mon Parcours</h2>
+                <p class="section-subtitle">Expériences professionnelles</p>
             </div>
-            <div class="timeline-wrapper">
-                <div class="timeline-item current">
-                    <div class="timeline-card">
+            <div class="experience-timeline">
+                <div class="timeline-item current animate">
+                    <div class="timeline-content">
                         <div class="timeline-date">Sept. 2023 - Nov. 2024</div>
-                        <div class="timeline-content">
-                            <h3>ElecPro</h3>
-                            <div class="position">Alternant Développeur</div>
-                            <p>Développement de solutions électriques innovantes et maintenance des systèmes informatiques.</p>
-                            <div class="tags">
-                                <span class="tag">Solutions Logicielles</span>
-                                <span class="tag">Maintenance</span>
-                                <span class="tag">Innovation</span>
-                            </div>
+                        <h3 class="timeline-title">ElecPro</h3>
+                        <div class="timeline-position">Alternant Développeur</div>
+                        <p class="timeline-description">
+                            Développement de solutions électriques innovantes et maintenance des systèmes informatiques.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Solutions Logicielles</span>
+                            <span class="timeline-tag">Maintenance</span>
+                            <span class="timeline-tag">Innovation</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="timeline-connector">
-                    <div class="connector-line"></div>
-                    <div class="connector-dot">
-                        <span>Évolution</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item future">
-                    <div class="timeline-card">
+                
+                <div class="timeline-item future animate delay-1">
+                    <div class="timeline-content">
                         <div class="timeline-date">Nov. 2024 - 2025</div>
-                        <div class="timeline-content">
-                            <h3>Rivrs</h3>
-                            <div class="position">Game Developer</div>
-                            <p>Développement de contenu UGC et optimisation des performances de jeu.</p>
-                            <div class="tags">
-                                <span class="tag">Game Dev</span>
-                                <span class="tag">UGC</span>
-                                <span class="tag">Performance</span>
-                            </div>
+                        <h3 class="timeline-title">Rivrs</h3>
+                        <div class="timeline-position">Game Developer</div>
+                        <p class="timeline-description">
+                            Développement de contenu UGC et optimisation des performances de jeu.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Game Dev</span>
+                            <span class="timeline-tag">UGC</span>
+                            <span class="timeline-tag">Performance</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="timeline-connector">
-                    <div class="connector-line"></div>
-                    <div class="connector-dot">
-                        <span>Évolution</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item future">
-                    <div class="timeline-card">
+                
+                <div class="timeline-item future animate delay-2">
+                    <div class="timeline-content">
                         <div class="timeline-date">Nov. 2024 - 2025</div>
-                        <div class="timeline-content">
-                            <h3>Diamond City LLC</h3>
-                            <div class="position">Game Developer</div>
-                            <p>Développement de scripts, systèmes et contenu personnalisé (UGC) pour serveur de jeu vidéo</p>
-                            <div class="tags">
-                                <span class="tag">Game Dev</span>
-                                <span class="tag">UGC</span>
-                                <span class="tag">Roleplay</span>
-                            </div>
+                        <h3 class="timeline-title">Diamond City UGC</h3>
+                        <div class="timeline-position">FiveM Developer</div>
+                        <p class="timeline-description">
+                            Développement de scripts, systèmes et contenu personnalisé (UGC) pour serveur de jeu vidéo FiveM.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Lua</span>
+                            <span class="timeline-tag">FiveM</span>
+                            <span class="timeline-tag">UGC</span>
                         </div>
                     </div>
                 </div>
@@ -269,69 +238,56 @@
         </div>
     </section>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Informations légales -->
-            <div class="col-lg-4 col-md-6 footer-section">
-                <h4>Informations Légales</h4>
-                <ul class="footer-links">
-                    <li><a href="assets/pages/mentions.html">Mentions légales</a></li>
-                    <li><a href="assets/pages/confidential.html">Politique de confidentialité</a></li>
-                    <li><a href="assets/pages/conditions.html">Conditions générales</a></li>
-                </ul>
-            </div>
-
-            <!-- Navigation rapide -->
-            <div class="col-lg-4 col-md-6 footer-section">
-                <h4>Navigation Rapide</h4>
-                <ul class="footer-links">
-                    <li><a href="#" class="active">Accueil</a></li>
-                    <li><a href="assets/pages/entreprise.html">Entreprise</a></li>
-                    <li><a href="assets/pages/realisations.html">Réalisations</a></li>
-                    <li><a href="assets/pages/veille.html">Veille technologique</a></li>
-                    <li><a href="assets/pages/bilan.html">Bilan</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="col-lg-4 footer-section">
-                <h4>Contact</h4>
-                <div class="contact-info">
-                    <p><i class="bi bi-geo-alt"></i> Paris, France</p>
-                    <p>
-                        <i class="bi bi-envelope"></i>
-                        <a href="mailto:ahcene.zidahnal@gmail.com">ahcene.zidahnal@gmail.com</a>
-                    </p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Informations Légales</h3>
+                    <ul class="footer-links">
+                        <li><a href="assets/pages/mentions.html">Mentions légales</a></li>
+                        <li><a href="assets/pages/confidential.html">Politique de confidentialité</a></li>
+                        <li><a href="assets/pages/conditions.html">Conditions générales</a></li>
+                    </ul>
                 </div>
-                <div class="footer-social">
-                    <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" target="_blank" rel="noopener">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/spacevx" target="_blank" rel="noopener">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://gitlab.com/TheSpaceGamerV2" target="_blank" rel="noopener">
-                        <i class="bi bi-gitlab"></i>
-                    </a>
+                
+                <div class="footer-col">
+                    <h3>Navigation Rapide</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="active">Accueil</a></li>
+                        <li><a href="assets/pages/entreprise.html">Entreprise</a></li>
+                        <li><a href="assets/pages/realisations.html">Réalisations</a></li>
+                        <li><a href="assets/pages/veille.html">Veille technologique</a></li>
+                        <li><a href="assets/pages/bilan.html">Bilan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt"></i> Paris, France</p>
+                        <p>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:ahcene.zidahnal@gmail.com">ahcene.zidahnal@gmail.com</a>
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://fr.linkedin.com/in/ahcene-zidahnal-9a79a4263" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/spacevx" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://gitlab.com/TheSpaceGamerV2" target="_blank" rel="noopener">
+                                <i class="bi bi-gitlab"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="copyright">© 2025 Ahcene Zidahnal. Tous droits réservés.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="credits">Développé par Ahcene Zidahnal</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Ahcene Zidahnal. Tous droits réservés. Développé par Ahcene Zidahnal</p>
             </div>
         </div>
-    </div>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
+    </footer>
 </body>
 </html>
