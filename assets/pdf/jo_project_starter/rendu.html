@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Ticket - Rendu Projet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jo Ticket (projet_jo_starter)</h1>
+        <p>Plateforme d'achat et de gestion de billets pour les événements olympiques</p>
+    </header>
+
+    <div class="section">
+        <h2>Système de connexion et inscription</h2>
+        <p>Interface utilisateur permettant aux utilisateurs de s'inscrire et de se connecter au site web.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561399481700515/Capture_decran_2025-04-18_004048.png?ex=6802d7b0&is=68018630&hm=84cbc4dc825f275dcee7d90c7c1e0df8e19b96da423ef2dc64cbc62516507e69&=" alt="Page d'inscription">
+            <div class="caption">Page d'inscription avec formulaire complet</div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561398034403328/Capture_decran_2025-04-18_004103.png?ex=6802d7b0&is=68018630&hm=92f0b70e48adbc58a7a50fba0c08494e88cc17039c49f06193cadb77e5b5b2af&=" alt="Page de connexion">
+            <div class="caption">Interface de connexion sécurisée</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Accueil (sans être connecté)</h2>
+        <p>Page d'accueil disponible pour les utilisateurs non connectés.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561399246688437/Capture_decran_2025-04-18_004030.png?ex=6802d7b0&is=68018630&hm=953e2b9eb08ab0fdcb8cd507995a87cde1550963b4ff5730ce536af3ddc83ee3&=" alt="Page d'accueil">
+            <div class="caption">Vue de la page d'accueil pour les utilisateurs non connectés</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Mon profil</h2>
+        <p>Espace permettant aux utilisateurs de consulter leurs billets.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561398693171270/Capture_decran_2025-04-18_004143.png?ex=6802d7b0&is=68018630&hm=e600d9bfff1fe5944cd5f024caac75c119e8a7595c43d8b7ac64db37d032616b&=" alt="Page de profil">
+            <div class="caption">Interface de gestion du profil utilisateur</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Rendu d'un billet (ou plusieurs)</h2>
+        <p>Billet(s) avec le qrcode et la catégorie</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561399003287582/Capture_decran_2025-04-18_004153.png?ex=6802d7b0&is=68018630&hm=95de9082eca1297f0082f9ece0305ba060f043fa492ae78759850465dba0112d&=" alt="Affichage des billets">
+            <div class="caption">Présentation des billets achetés</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Acheter un ou plusieurs billet(s)</h2>
+        <p>Faux Processus d'achat pour acheter des billets.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362561398445576252/Capture_decran_2025-04-18_004132.png?ex=6802d7b0&is=68018630&hm=a416b1b1611f99b143ebb97c8431297693a8dbc99dae5ae31a39f103b8162aef&=" alt="Achat de billets">
+            <div class="caption">Interface d'achat de billets avec sélection multiple</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Système pour scanner les QR Codes</h2>
+        <p>Fonctionnalité de vérification des billets par le qrcode.</p>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362562099892584499/Capture_decran_2025-04-18_004219.png?ex=6802d857&is=680186d7&hm=218324c507de121327023b920b61c4574ae14c8877ca0c61dd6685c65c64c6c8&" alt="Scanner QR Code">
+            <div class="caption">Système de scan de QR Code pour la validation des billets</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Interface administrateur</h2>
+        <p>Interface d'administration réservés aux administrateurs des jeux olympiques.</p>
+        
+        <h3>Page principale</h3>
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362562190791671879/Capture_decran_2025-04-18_004450.png?ex=6802d86d&is=680186ed&hm=4b9031d458080688846d4f23a70d2c0021071ae021cd9d473a79704dbe128861&" alt="Page admin principale">
+            <div class="caption">Tableau principal de l'administration</div>
+        </div>
+
+        <h3>Modifier un match</h3>
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362562191097594076/Capture_decran_2025-04-18_004506.png?ex=6802d86d&is=680186ed&hm=0fc85104490d036cffbf4d5a06753f2a0dc86d7977d4eab5ca22c8ad178db1ca&" alt="Modifier un match">
+            <div class="caption">Interface pour modifier les informations d'un match</div>
+        </div>
+
+        <h3>Créer un match</h3>
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362562191387131905/Capture_decran_2025-04-18_004515.png?ex=6802d86d&is=680186ed&hm=e36d9203fd2922a5fc7de8a3d61bb6ac66c9c822fcc72b829f6ab56c14f69123&=" alt="Créer un match">
+            <div class="caption">Interface pour créer un nouveau match</div>
+        </div>
+    </div>
+
+    <footer class="section" style="text-align: center; margin-top: 50px;">
+        <p>&copy; 2025 Jo Ticket | Tous droits réservés</p>
+    </footer>
+</body>
+</html>
