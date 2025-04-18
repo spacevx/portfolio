@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Gestion des EPI - Rendu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1e88e5;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #1e88e5;
+            border-bottom: 2px solid #1e88e5;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #0d47a1;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+        .feature-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid #1e88e5;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .tech-info {
+            background-color: #f1f8e9;
+            border-left: 4px solid #7cb342;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card h4 {
+            color: #1e88e5;
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tech-badge {
+            background-color: #0d47a1;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Système de Gestion des EPI</h1>
+        <p>Application web pour la gestion des Équipements de Protection Individuelle</p>
+    </header>
+
+    <div class="section">
+        <h2>Gestion des EPI</h2>
+        
+        <h3>Ajout d'un nouvel EPI</h3>
+        <div class="feature-box">
+            <p>L'interface permet d'ajouter facilement un nouvel EPI en renseignant les détails suivants :</p>
+            <ul>
+                <li>Type d'EPI</li>
+                <li>Informations d'identification</li>
+                <li>Date de mise en service</li>
+                <li>Date d'achat</li>
+                <li>Date de fabrication</li>    
+                <li>Fréquence des contrôles</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630121214836907/image.png?ex=680317b1&is=6801c631&hm=f034ee025d7ce67b8879e1fe814fba315704d22b84906dead146bf9663ba34f9&=&format=webp&quality=lossless&width=1656&height=1152" alt="Interface d'ajout d'un EPI">
+        </div>
+        
+        <h3>Visualisation des EPI existants</h3>
+        <div class="feature-box">
+            <p>Un tableau de bord complet présente tous les EPI enregistrés avec :</p>
+            <ul>
+                <li>Filtrage par type</li>
+                <li>Statut des contrôles (à jour/en retard)</li>
+                <li>Informations détaillées</li>
+                <li>Options de modification et suppression</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630189997228133/image.png?ex=680317c1&is=6801c641&hm=52c0d53856fcecbc30374611e07b3406f2a2582dd497745db9f2ec26f5afde5c&=&format=webp&quality=lossless&width=2098&height=876" alt="Liste des EPI existants">
+        </div>
+    
+    </div>
+
+    <div class="section">
+        <h2>Système de contrôle des EPI</h2>
+        
+        <h3>Page de contrôle</h3>
+        <div class="feature-box">
+            <p>L'interface de contrôle permet de visualiser rapidement les EPI nécessitant une vérification :</p>
+            <ul>
+                <li>Liste des contrôles planifiés</li>
+                <li>Historique des contrôles effectués</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630257609412739/image.png?ex=680317d1&is=6801c651&hm=6b2c9bb68fb740b21a80d5f352c9c95ce300f6b67f7d5626905e5b8bedcb5807&=&format=webp&quality=lossless&width=1646&height=1152" alt="Page de contrôle des EPI">
+        </div>
+        
+        <h3>Création d'un nouveau contrôle</h3>
+        <div class="feature-box">
+            <p>Le système permet d'enregistrer facilement les résultats d'un contrôle :</p>
+            <ul>
+                <li>Sélection de l'EPI</li>
+                <li>Date de réalisation</li>
+                <li>Résultat (à réparer/mis au rébut, opérationnel)</li>
+                <li>Remarques et observations</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630447355396206/image.png?ex=680317ff&is=6801c67f&hm=a91af5cdad6cc376b60313982c664b1507bce042802cfe4e87cffec29a673706&=&format=webp&quality=lossless&width=1658&height=1152" alt="Interface de création d'un contrôle">
+        </div>
+        
+        <h3>Historique des contrôles</h3>
+        <div class="feature-box">
+            <p>La WebApp posséde un historique des contrôles pour chaque EPI :</p>
+            <ul>
+                <li>Visualisation des vérifications</li>
+                <li>Détails des résultats et actions</li>
+                <li>Suivi de l'état de l'EPI</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630403306946560/image.png?ex=680317f4&is=6801c674&hm=5039265927c160512c1d69c40007092be60ec8faaafa746f3785e4826e50cf39&=&format=webp&quality=lossless&width=1756&height=1152" alt="Historique des contrôles">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Gestion des utilisateurs</h2>
+        
+        <h3>Administration des gestionnaires</h3>
+        <div class="feature-box">
+            <p>L'interface gestionnaire permet de gérer les comptes utilisateurs :</p>
+            <ul>
+                <li>Liste des gestionnaires actifs</li>
+                <li>Informations de contact</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630632563544204/image.png?ex=6803182b&is=6801c6ab&hm=c94ac82f32b7e66eb1f037a2cfae994ac5714d193e0db358396adc90559c391f&=&format=webp&quality=lossless&width=2098&height=972" alt="Page des gestionnaires">
+        </div>
+        
+        <h3>Création d'un nouveau gestionnaire</h3>
+        <div class="feature-box">
+            <p>Le système permet d'ajouter de nouveaux gestionnaires :</p>
+            <ul>
+                <li>Informations personnelles</li>
+                <li>Identifiants de connexion</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630681930235924/image.png?ex=68031837&is=6801c6b7&hm=a871c8df925cc29c8d2763dcb3b3b1543d19c3d0756a60695c182a9f9130b1b8&=&format=webp&quality=lossless&width=1612&height=1152" alt="Création d'un gestionnaire">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Configuration des types d'EPI</h2>
+        
+        <h3>Gestion des catégories d'EPI</h3>
+        <div class="feature-box">
+            <p>L'application permet de configurer les différents types EPI :</p>
+            <ul>
+                <li>Catalogue des types d'EPI disponibles</li>
+                <li>Fréquence de contrôle par défaut</li>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630713379131422/image.png?ex=6803183e&is=6801c6be&hm=d15e692fa659683300b606e68beab41a6321df8112676af00365fb5c640a90ed&=&format=webp&quality=lossless&width=2098&height=1136" alt="Page des types d'EPI">
+        </div>
+        
+        <h3>Ajout d'un nouveau type d'EPI</h3>
+        <div class="feature-box">
+            <p>Le système permet de créer de nouvelles catégories (type) d'EPI :</p>
+            <ul>
+                <li>Définition des caractéristiques</li>
+                <li>Paramètres de périodicité</li>
+            </ul>
+        </div>  
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362630751064948889/image.png?ex=68031847&is=6801c6c7&hm=34558246343c81cc50dcb948fd6bf8db6f424962004d31738a9627955b98e07d&=&format=webp&quality=lossless&width=1736&height=1152" alt="Ajout d'un type d'EPI">
+        </div>
+    </div>
+
+    <footer class="section" style="text-align: center; margin-top: 50px;">
+        <p>© 2025 Système de Gestion des EPI</p>
+    </footer>
+</body>
+</html>
