@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GestionAvion - Rendu Code</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #34a853;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+        .code-explanation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #1a73e8;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight {
+            background-color: #fff8e1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .git-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background-color: #2a3f54;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            min-width: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .stat-box h4 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #4fc08d;
+        }
+        .stat-box p {
+            margin: 5px 0 0 0;
+            font-size: 0.9rem;
+            color: #e0e0e0;
+        }
+        .commit-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .commit-type {
+            background-color: #374151;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        .workflow-feature {
+            background-color: #e9f7fe;
+            border-left: 4px solid #03a9f4;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .release-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .code-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>API GestionAvion - Rendu Code</h1>
+        <p>Implémentation CI/CD et gestion de versions</p>
+    </header>
+
+    <div class="section">
+        <h2>Structure de l'API</h2>
+        
+        <div class="code-box">
+            <h3>Middleware de validation des requêtes</h3>
+            <p>Un système de middleware pour vérifier chaque requête</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362584206605156352/image.png?ex=6802ecee&is=68019b6e&hm=45562f4fe8eabebf11b1f80c3b7f38c742d9ce982c8429503bb813a4199b5b96&" alt="Middleware de validation">
+        </div>
+        
+        <div class="code-explanation">
+            <h4>Fonctionnalités du middleware</h4>
+            <ul>
+                <li>Vérification des paramètres requis dans les requêtes</li>
+                <li>Gestion des erreurs avec retour d'information précis</li>
+                <li>Validation du nombre exact de paramètres attendus</li>
+                <li>Amélioration de la sécurité en bloquant les requêtes mal formées</li>
+            </ul>
+            <p>Cela permet d'éviter de se répéter dans le code et de faire une vérification dans chaque route.</p>
+        </div>
+        
+        <div class="code-box">
+            <h3>Exemple d'implémentation des routes</h3>
+            <p>Les routes de l'API utilisent le middleware :</p>
+        </div>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362584367196803224/image.png?ex=6802ed14&is=68019b94&hm=437b8fb6a62d91a3aeb984d13ec6b259d85b7c7b9133919894bd008b7261bb2a&=&format=webp&quality=lossless" alt="Route d'API">
+        </div>
+        
+        <div class="code-explanation">
+            <h4>Structure des routes</h4>
+            <ul>
+                <li>Utilisation du middleware</li>
+                <li>Séparation entre vérifications et logique métier</li>
+                <li>Gestion des réponses / codes d'état HTTP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Versionnage et gestion du code</h2>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362581138396282971/image.png?ex=6802ea12&is=68019892&hm=a1f06209931a40017c4cacc0ece3a110d7aaaccb300f63223d47f8274ab8ff9f&=&format=webp&quality=lossless&width=1455&height=856" alt="Historique des commits Git">
+        </div>
+        
+        <div class="git-stats">
+            <div class="stat-box">
+                <h4>22</h4>
+                <p>COMMITS</p>
+            </div>
+            <div class="stat-box">
+                <h4>100%</h4>
+                <p>CONVENTIONAL COMMITS</p>
+            </div>
+        </div>
+        
+        <div class="code-explanation">
+            <h4>Utilisation des <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">Conventional Commits</a></h4>
+            <p>Le projet a été développé en suivant la norme <span class="highlight">Conventional Commits</span>, permettant un historique de commits lisibles :</p>
+            
+            <div class="commit-types">
+                <span class="commit-type">feat: nouvelle fonctionnalité</span>
+                <span class="commit-type">fix: correction de bug</span>
+                <span class="commit-type">chore: utilitaire</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Intégration Continue (CI)</h2>
+        
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1108128001192890479/1362581395830214737/image.png?ex=6802ea50&is=680198d0&hm=7b2ca5cce38fedc50f046d0d2f553ce734523cb2fb7267ea1965b2235fcc2775&=&format=webp&quality=lossless&width=1675&height=856" alt="Workflow GitHub Actions">
+        </div>
+        
+        <div class="workflow-feature">
+            <h3>Tests automatisés sur chaque push</h3>
+            <p>Une action GitHub a été configurée pour vérifier automatiquement la qualité du code à chaque push (un test unitaire) :</p>
+            <ul>
+                <li>Vérification des types TypeScript</li>
+                <li>Build du projet pour s'assurer qu'il compile correctement</li>
+            </ul>
+            <p>La vérification permet de détecter les erreurs et d'assurer une bonne qualité de code (QoL).</p>
+        </div>
+        
+        <h3>GitHub Workflow Code</h3>
+        <pre><code>name: TypeScript Build and Release
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# Si on ne possède pas ces permissions il ne voudra pas faire la release
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.18.0
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: TypeScript Type Check
+        run: npx tsc --noEmit
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Get Previous Version
+        id: prev_version
+        run: |
+          if git rev-parse HEAD^1 >/dev/null 2>&1; then
+            git show HEAD^:package.json > previous_package.json || echo '{"version": "0.0.0"}' > previous_package.json
+          else
+            echo '{"version": "0.0.0"}' > previous_package.json
+          fi
+          PREV_VERSION=$(node -p "require('./previous_package.json').version")
+          echo "version=$PREV_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Get Current Version
+        id: current_version
+        run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check Version Change
+        id: version_check
+        run: |
+          PREV_VERSION=${{ steps.prev_version.outputs.version }}
+          CURRENT_VERSION=${{ steps.current_version.outputs.version }}
+          
+          IFS='.' read -r PREV_MAJOR PREV_MINOR PREV_PATCH <<< "${PREV_VERSION//./ }"
+          IFS='.' read -r CURR_MAJOR CURR_MINOR CURR_PATCH <<< "${CURRENT_VERSION//./ }"
+          
+          if [ "$PREV_MAJOR" != "$CURR_MAJOR" ] || [ "$PREV_MINOR" != "$CURR_MINOR" ]; then
+            echo "create_release=true" >> $GITHUB_OUTPUT
+          else
+            echo "create_release=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Git Tag
+        if: steps.version_check.outputs.create_release == 'true' && github.event_name == 'push'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git tag -a v${{ steps.current_version.outputs.version }} -m "Release version ${{ steps.current_version.outputs.version }}"
+          git push origin v${{ steps.current_version.outputs.version }}
+
+      - name: Prepare Release Files
+        if: steps.version_check.outputs.create_release == 'true' && github.event_name == 'push'
+        run: |
+          mkdir -p release_build
+          
+          cp -r dist/ release_build/
+          cp -r src/ release_build/
+          
+          cp package.json release_build/
+          cp tsconfig.json release_build/
+          cp README.md release_build/ 2>/dev/null || true
+          
+          echo "node_modules/" > release_build/.gitignore
+          echo ".github/" >> release_build/.gitignore
+          echo ".git/" >> release_build/.gitignore
+          echo ".idea/" >> release_build/.gitignore
+          
+          cd release_build
+          zip -r ../release.zip . -x "**/.git*" "**/node_modules/*" "**/.idea/*" "**/.github/*"
+
+      - name: Create GitHub Release
+        if: steps.version_check.outputs.create_release == 'true' && github.event_name == 'push'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release.zip
+          tag_name: v${{ steps.current_version.outputs.version }}
+          name: Release v${{ steps.current_version.outputs.version }}
+          body: |
+            Release version ${{ steps.current_version.outputs.version }}
+            
+            Cette release contient :
+            - Code source (dossier src/)
+            - Build compilé (dossier dist/)
+            - Fichiers de configuration (package.json, tsconfig.json)
+            
+            Pour installer :
+            1. Décompressez l'archive
+            2. Exécutez `npm install`
+            3. Utilisez `npm start` pour lancer l'application
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>Déploiement Continu (CD)</h2>
+        
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1108128001192890479/1362582085243637922/image.png?ex=6802eaf4&is=68019974&hm=4c9fdba4c658f531ef11ced3bd04f0370a008e448a41302b9e2f97ded04dbab9&" alt="Releases automatiques">
+        </div>
+        
+        <div class="release-box">
+            <h3>Releases automatiques basées sur les commits</h3>
+            <p>Le workflow est configuré pour créer automatiquement des releases lors de modifications :</p>
+            <ul>
+                <li>Détection du changement de version dans le fichier package.json</li>
+                <li>Création d'un tag Git pour spécifier la version</li>
+                <li>Archive (ZIP) contenant la version compilée (dist)</li>
+                <li>Publication de la release GitHub avec les instructions</li>
+            </ul>
+        </div>
+        
+        <div class="code-explanation">
+            <h4>Fonctionnement du processus de release</h4>
+            <ol>
+                <li>Le système extrait les versions précédente et actuelle du package.json</li>
+                <li>Si une modification majeure ou mineure est détectée (changement de version x.y.z), une release est créée</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer class="section" style="text-align: center; margin-top: 50px;">
+        <p>&copy; 2025 API GestionAvion</p>
+    </footer>
+</body>
+</html>
